@@ -56,6 +56,7 @@ class UserController extends Controller
     {
         $credentials = $request->only('email', 'password');
         $token = JWTAuth::attempt($credentials);
+        $user = auth()->user();
 
         try {
             if (!$token) {
@@ -78,6 +79,7 @@ class UserController extends Controller
             'status' => 201,
             'message' => 'Logueado correctamente',
             'token' => $token,
+            'user' => $user
         ], 201);
     }
 

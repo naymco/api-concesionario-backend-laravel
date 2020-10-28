@@ -19,7 +19,7 @@ Route::group(['middleware' => ['cors']], function(){
     Route::group(['prefix' => 'user'], function ()
     {
         Route::post('/register', [UserController::class, 'register'])->name('register');
-        Route::post('login', [UserController::class, 'login'])->name('login');
+        Route::post('/login', [UserController::class, 'login'])->name('login');
         Route::put('/update/{id}', [UserController::class, 'update'])->name('update');
     });
 

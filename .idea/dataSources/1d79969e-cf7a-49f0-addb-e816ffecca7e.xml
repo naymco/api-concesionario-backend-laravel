@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="@localhost">
+<dataSource name="MariaDB - @localhost">
   <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.19">
     <root id="1">
       <ServerVersion>10.4.14</ServerVersion>
@@ -1103,7 +1103,7 @@
     </column>
     <column id="346" parent="334" name="price">
       <Position>8</Position>
-      <DataType>double(2,2 digit)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="347" parent="334" name="status">
@@ -1238,6 +1238,7 @@
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
+      <DefaultExpression>&apos;user&apos;</DefaultExpression>
     </column>
     <column id="374" parent="338" name="name">
       <Position>3</Position>

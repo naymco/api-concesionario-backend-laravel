@@ -12,6 +12,7 @@ class CarController extends Controller
     {
         $car = Car::all();
 
+
         if(!$car)
         {
             return response()->json([
@@ -38,7 +39,7 @@ class CarController extends Controller
             return response()->json([
                 'code' => 'error',
                 'status' => 404,
-                'message' => 'El coche que busca no existe'
+                'message' => 'No se ha podido crear el vehículo'
             ], 404);
         }
 

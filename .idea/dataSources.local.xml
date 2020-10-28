@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="@localhost" uuid="34430394-e78f-4ccb-a843-f488d302aeaf">
+    <data-source name="MariaDB - @localhost" uuid="1d79969e-cf7a-49f0-addb-e816ffecca7e">
       <database-info product="MariaDB" version="10.4.14-MariaDB" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="2.6.0" dbms="MARIADB" exact-version="10.4.14" exact-driver-version="2.6">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
@@ -11,10 +11,7 @@
       <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema">
-            <name qname="@" />
-            <name qname="api_concesionarios" />
-          </node>
+          <node kind="schema" qname="api_concesionarios" />
         </introspection-scope>
       </schema-mapping>
     </data-source>
